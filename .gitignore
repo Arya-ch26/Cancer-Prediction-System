@@ -1,7 +1,11 @@
-*.pkl
-model.pkl
-pipeline.pkl
+__pycache__/
+*.pyc
+
 Train_model.py
 The_Cancer_data_1500_V2.csv
 input.csv
 output.csv
+
+.vscode/
+venv/
+.env
