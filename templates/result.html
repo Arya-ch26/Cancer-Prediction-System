@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Prediction</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Prediction Result</h1>
+
+{% if result == 1 %}
+<h2 class="danger">⚠ Cancer Detected</h2>
+{% else %}
+
+<h2 class="safe"> No Cancer Detected</h2>
+{% endif %}
+{% if probability is not none %}
+
+
+<h3>Prediction Confidence</h3>
+<p>{{ "%.2f"|format(probability * 100) }}%</p>
+{% endif %}
+
+
+
+<a href="/">
+
+<button>
+Predict Again
+</button>
+
+</a>
+
+</div>
+
+</body>
+
+</html>

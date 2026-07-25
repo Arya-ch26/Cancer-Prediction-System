@@ -1,0 +1,7 @@
+*.pkl
+model.pkl
+pipeline.pkl
+Train_model.py
+The_Cancer_data_1500_V2.csv
+input.csv
+output.csv
